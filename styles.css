@@ -168,8 +168,8 @@ li + li {
 
 .hero {
   position: relative;
-  min-height: min(590px, 68svh);
-  padding: clamp(2.4rem, 5.4vw, 4.8rem) 0 clamp(2.6rem, 6vw, 4.8rem);
+  min-height: min(460px, 54svh);
+  padding: clamp(2.4rem, 5.4vw, 4.8rem) 0 clamp(2.2rem, 5vw, 3.8rem);
   display: grid;
   align-content: start;
 }
@@ -411,6 +411,57 @@ h3 {
   font-weight: 500;
 }
 
+.case-study-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.25rem);
+}
+
+.case-study {
+  padding-top: 1rem;
+  border-top: 1px solid var(--line-strong);
+}
+
+.case-study h3 {
+  max-width: 14rem;
+  font-size: clamp(1.35rem, 2.4vw, 2.05rem);
+  line-height: 1.08;
+}
+
+.case-study p {
+  margin-top: 0.85rem;
+  color: var(--ink-soft);
+  font-family: var(--display);
+  font-size: clamp(1rem, 1.4vw, 1.18rem);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.section--logos {
+  padding-top: clamp(1.6rem, 3vw, 2.5rem);
+}
+
+.logo-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  justify-items: center;
+  gap: clamp(2rem, 7vw, 6rem);
+  width: 100%;
+}
+
+.logo-row img {
+  display: block;
+  width: min(100%, 14rem);
+  max-height: 4.2rem;
+  object-fit: contain;
+}
+
+.logo-row img[src*="tsinghua"] {
+  width: min(100%, 5.2rem);
+  max-height: 5.2rem;
+}
+
 .cta {
   position: relative;
   margin: clamp(2.3rem, 5vw, 4.2rem) 0 clamp(3.2rem, 7vw, 5.2rem);
@@ -581,6 +632,16 @@ h3 {
 
   .card {
     min-height: auto;
+  }
+
+  .case-study-list,
+  .logo-row {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  .case-study h3 {
+    max-width: none;
   }
 }
 
