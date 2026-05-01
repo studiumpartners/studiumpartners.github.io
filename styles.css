@@ -425,8 +425,8 @@ h3 {
     linear-gradient(135deg, rgba(255, 255, 255, 0.44), transparent 62%),
     rgba(244, 236, 216, 0.84);
   display: grid;
-  align-content: space-between;
-  gap: 1.1rem;
+  align-content: start;
+  gap: clamp(0.85rem, 1.6vw, 1.2rem);
 }
 
 .case-study span {
@@ -444,7 +444,7 @@ h3 {
 }
 
 .case-study p {
-  margin-top: 0.85rem;
+  margin-top: 0;
   color: var(--ink-soft);
   font-family: var(--display);
   font-size: clamp(1rem, 1.4vw, 1.18rem);
