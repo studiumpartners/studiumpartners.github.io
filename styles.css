@@ -465,7 +465,7 @@ h3 {
 }
 
 .logo-card {
-  min-height: 12rem;
+  min-height: 10rem;
   margin: 0;
   padding: clamp(1.2rem, 2.4vw, 1.6rem);
   display: grid;
@@ -488,16 +488,6 @@ h3 {
 .logo-card img[src*="tsinghua"] {
   width: min(100%, 5.8rem);
   max-height: 5.8rem;
-}
-
-.logo-card figcaption {
-  color: var(--ink);
-  font-family: var(--ui);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .cta {
