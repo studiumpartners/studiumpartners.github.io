@@ -159,8 +159,8 @@ img {
   inset: 0;
   z-index: -3;
   background:
-    linear-gradient(90deg, rgba(6, 21, 35, 0.88), rgba(6, 21, 35, 0.58) 48%, rgba(6, 21, 35, 0.2)),
-    url("https://www.winchestercollege.org/wp-content/uploads/2025/05/shorter-homepage-image-2560x0-c-center.jpg") center / cover;
+    linear-gradient(90deg, rgba(6, 21, 35, 0.78), rgba(6, 21, 35, 0.46) 48%, rgba(6, 21, 35, 0.14)),
+    url("https://www.winchestercollege.org/wp-content/uploads/2025/05/shorter-homepage-image.jpg") center top / cover;
   transform: scale(1.03);
   animation: slow-drift 13s ease-out forwards;
 }
